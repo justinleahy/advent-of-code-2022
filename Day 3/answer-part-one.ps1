@@ -7,9 +7,9 @@ $LettersUppercase = $LettersLowercase.ToUpper()
 $Priority = New-Object System.Collections.Hashtable
 
 # Create Priority Dictionary with all lowercase and uppercase letters
-for ($index = 0; $index -lt $chars.Length; $index++) {
-    $priority[$LettersLowercase[$index]] = ($index + 1)
-    $priority[$LettersUppercase[$index]] = ($index + 27)
+for ($index = 0; $index -lt $LettersLowercase.Length; $index++) {
+    $Priority[$LettersLowercase[$index]] = ($index + 1)
+    $Priority[$LettersUppercase[$index]] = ($index + 27)
 }
 
 $PrioritySum = 0
